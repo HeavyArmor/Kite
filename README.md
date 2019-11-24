@@ -43,10 +43,21 @@ public class TestImpl implements Test {
 ```  
 ## 泛型  
 <T: extends interface|implements interface|class1|class2|string|boolean|char>  
+
+## 运算符
+### 算术运算符
+运算符|描述
+---|:--:
++|相加
+-|相减
+*|相乘
+/|相除
+%|求余
+
 ## 反射
 
-## 语法要点
-1、动态、强类型语言
-2、缺省参数和动态参数
+## 语法要点  
+1、动态、强类型语言  
+2、缺省参数和动态参数  
 3、泛型  
-4、反射
+4、反射  
