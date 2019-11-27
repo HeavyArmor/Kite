@@ -1,6 +1,6 @@
 # Kite
 Kite(风筝)编程语言
-## 关键词
+>## 关键词
 import  
 boolean,string,char,int,float,double,long,short,null  
 public,private,static,class,interface  
@@ -11,10 +11,10 @@ true,false
 class,interface  
 this,super  
 extends,implements
-## 内置函数  
+>## 内置函数  
 typeof,instanceof  
 
-## 语法样例  
+>## 语法样例  
 ```Kite
 import {Test} from com.ha.test;  
 
@@ -41,10 +41,10 @@ public class TestImpl implements Test {
     }  
 }
 ```  
-## 泛型  
+>## 泛型  
 <T: extends interface|implements interface|class1|class2|string|boolean|char>  
 
-## 运算符
+>## 运算符
 ### 算术运算符
 |运算符|描述|
 |:---:|:--:|
@@ -77,9 +77,9 @@ public class TestImpl implements Test {
 |<<|左移运算符"<<"是双目运算符。左移n位就是乘以2的n次方。 其功能把"<<"左边的运算数的各二进位全部左移若干位，由"<<"右边的数指定移动的位数，高位丢弃，低位补0|
 |>>|右移运算符">>"是双目运算符。右移n位就是除以2的n次方。 其功能是把">>"左边的运算数的各二进位全部右移若干位，">>"右边的数指定移动的位数。|
 
-## 反射
+>## 反射
 
-## 语法要点  
+>## 语法要点  
 1、动态、强类型语言  
 2、缺省参数和动态参数  
 3、泛型  
