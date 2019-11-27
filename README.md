@@ -1,38 +1,45 @@
 # Kite
 Kite(风筝)编程语言
 >## 关键字
-|关键字|关键字|关键字|
-|:---:|:---:|:---:|
-|import|boolean|string|
-|char|int|float|
-|double|long|short|
-|null|public|private|
-|static|class|interface|  
-|try|catch|throws|  
-|for|do|while|
-|if|else|switch|
-|case|default|return|
-|continue|true|false|  
-|class|interface|this|
-|super|extends|implements|
+|关键字|关键字|关键字|关键字
+|:---:|:---:|:---:|:---:|
+|import|boolean|string|char|
+|int|float|double|long|
+|short|public|private|protected|
+|static|class|interface|try|
+|catch|throws|for|do|
+while|if|else|switch|
+|case|default|return|continue|
+|true|false|class|interface|
+|this|super|extends|implements|
+|null|||
 >## 内置函数  
-typeof,instanceof  
+|内置函数|内置函数|内置函数|
+|---|---|---|
+|typeof|instanceof||  
+>## 内置对象  
+|内置对象|内置对象|内置对象|
+|---|---|---|
+|Date|Set|Map|
 
 >## 语法样例  
 ```Kite
 import {Test} from com.ha.test;  
 
-public interface TestInterface extends Test{  
+public interface Test {
     public name: string;  
+    public getName(): string; 
+}
+
+public interface TestInterface extends Test {  
     public age?: integer;  
-    public height?: double;  
-    public getName(): string;  
+    protected height?: double;  
 }  
 
-public class TestImpl implements Test {  
-    name: string = "12345";  
-    age: int = 24;  
-    height: double = 134.56;  
+public class TestImpl implements TestInterface {  
+    public name: string = "12345";  
+    public age: int = 24;  
+    protected height: double = 134.56;  
 
     public test(name: string, age?: integer, height?: double): void {  
         this.name = name;  
@@ -88,3 +95,4 @@ public class TestImpl implements Test {
 2、缺省参数和动态参数  
 3、泛型  
 4、反射  
+5、丰富的内置对象和函数
