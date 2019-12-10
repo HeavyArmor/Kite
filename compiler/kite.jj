@@ -1,0 +1,26 @@
+options {
+    STATIC=false;
+}
+
+PARSER_BEGIN(Kite)
+
+public class Kite {
+    public static void main(String args[]) throws ParseException {
+
+    }
+}
+
+PARSER_END(Kite)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| "\f"
+}
+
+TOKEN: 
+{
+}
